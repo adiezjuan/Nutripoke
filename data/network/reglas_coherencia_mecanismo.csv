@@ -1,0 +1,47 @@
+rule_id,mechanism_id,variable_key,activation_mode,role,combo_group,evidence_tier,clinical_rationale,is_primary,weight,is_enabled
+IR_COH_01,insulinorresistencia,glucose_mg_dl,high,primary_signal,glycemic_axis,alta,"La glucosa alterada aporta señal del eje glucémico y, junto con otras señales, apoya insulinorresistencia.",0,1.0,1
+IR_COH_02,insulinorresistencia,hba1c_pct,high,primary_signal,glycemic_axis,alta,"La HbA1c refleja disglucemia sostenida y refuerza la plausibilidad del patrón.",0,1.0,1
+IR_COH_03,insulinorresistencia,insulin_uIU_ml,high,primary_driver,insulin_axis,alta,"La hiperinsulinemia compensatoria es uno de los drivers más representativos del patrón de insulinorresistencia.",1,1.0,1
+IR_COH_04,insulinorresistencia,triglycerides_mg_dl,high,supporting_driver,lipid_axis,media,"Los triglicéridos elevados son un soporte metabólico frecuente del patrón insulinorresistente.",0,1.0,1
+IR_COH_05,insulinorresistencia,hdl_mg_dl,low,supporting_driver,lipid_axis,media,"HDL bajo apoya el patrón metabólico compatible con insulinorresistencia.",0,1.0,1
+IR_COH_06,insulinorresistencia,waist_cm,high,primary_driver,adiposity_axis,media,"La adiposidad central aumenta la plausibilidad fisiológica del mecanismo.",1,1.0,1
+IR_COH_07,insulinorresistencia,bmi_kg_m2,high,contextual_support,adiposity_axis,media,"El exceso adiposo general aporta contexto, pero no debería activar el mecanismo por sí solo.",0,1.0,1
+
+DG_COH_01,disfuncion_glucidica,glucose_mg_dl,high,primary_driver,glycemic_axis,alta,"La glucosa es un driver primario de alteración glucémica.",1,1.0,1
+DG_COH_02,disfuncion_glucidica,hba1c_pct,high,primary_driver,glycemic_axis,alta,"La HbA1c sostiene la idea de disglucemia mantenida y no solo puntual.",1,1.0,1
+DG_COH_03,disfuncion_glucidica,insulin_uIU_ml,high,supporting_driver,insulin_axis,media,"La insulina puede reforzar el contexto metabólico, pero no define por sí sola la disfunción glucídica.",0,1.0,1
+
+DA_COH_01,dislipidemia_aterogenica,triglycerides_mg_dl,high,primary_driver,tg_axis,alta,"Los triglicéridos altos son un driver clásico del patrón aterogénico.",1,1.0,1
+DA_COH_02,dislipidemia_aterogenica,hdl_mg_dl,low,primary_driver,hdl_axis,alta,"HDL bajo es un driver principal del patrón de dislipidemia aterogénica.",1,1.0,1
+DA_COH_03,dislipidemia_aterogenica,apob_mg_dl,high,primary_driver,apob_axis,alta,"ApoB alto refleja aumento de partículas aterogénicas y aporta gran especificidad.",1,1.0,1
+DA_COH_04,dislipidemia_aterogenica,ldl_mg_dl,high,supporting_driver,carga_aterogenica,media,"LDL alto apoya el patrón aterogénico, pero tiene menos especificidad que ApoB.",0,1.0,1
+DA_COH_05,dislipidemia_aterogenica,chol_total_mg_dl,high,contextual_support,carga_aterogenica,baja,"El colesterol total es poco específico y no debe mandar solo.",0,1.0,1
+
+INF_COH_01,inflamacion,hscrp_mg_l,high,primary_driver,inflammation_axis,alta,"La PCR ultrasensible es el driver principal del patrón inflamatorio sistémico de bajo grado.",1,1.0,1
+INF_COH_02,inflamacion,nlr,high,supporting_driver,hematologic_axis,media,"El cociente neutrófilos-linfocitos aporta soporte hematológico al patrón inflamatorio.",0,1.0,1
+INF_COH_03,inflamacion,ferritin_ng_ml,high,supporting_driver,reactant_axis,media,"La ferritina puede comportarse como reactante de fase aguda y reforzar el patrón en contexto adecuado.",0,1.0,1
+INF_COH_04,inflamacion,esr_mm_h,high,supporting_driver,reactant_axis,media,"La VSG puede apoyar una lectura inflamatoria si converge con otros reactantes.",0,1.0,1
+INF_COH_05,inflamacion,fibrinogen_mg_dl,high,supporting_driver,coag_reactant_axis,media,"El fibrinógeno elevado puede reforzar la señal inflamatoria sistémica.",0,1.0,1
+INF_COH_06,inflamacion,wbc_x10_3_mm3,high,supporting_driver,cellular_axis,baja,"La leucocitosis aporta soporte inespecífico del eje inflamatorio.",0,1.0,1
+INF_COH_07,inflamacion,albumin_g_dl,low,contextual_support,negative_reactant_axis,baja,"La albúmina baja puede actuar como reactante negativo de fase aguda y añadir contexto.",0,1.0,1
+
+RLS_COH_01,resistencia_leptinica_saciedad,waist_cm,high,primary_driver,adiposity_axis,media,"La adiposidad central es el proxy más útil del fenotipo leptínico en ausencia de leptina circulante.",1,1.0,1
+RLS_COH_02,resistencia_leptinica_saciedad,bmi_kg_m2,high,supporting_driver,adiposity_axis,media,"El BMI refuerza el exceso adiposo, aunque es menos específico que la cintura.",0,1.0,1
+RLS_COH_03,resistencia_leptinica_saciedad,triglycerides_mg_dl,high,supporting_driver,metabolic_axis,baja,"Los triglicéridos altos pueden acompañar un fenotipo de saciedad alterada, pero no son específicos.",0,1.0,1
+RLS_COH_04,resistencia_leptinica_saciedad,hdl_mg_dl,low,supporting_driver,metabolic_axis,baja,"HDL bajo puede reforzar el contexto metabólico, sin ser un driver nuclear.",0,1.0,1
+RLS_COH_05,resistencia_leptinica_saciedad,insulin_uIU_ml,high,supporting_driver,insulin_axis,baja,"La hiperinsulinemia puede acompañar el fenotipo, aunque no lo define por sí sola.",0,1.0,1
+RLS_COH_06,resistencia_leptinica_saciedad,glucose_mg_dl,high,contextual_support,glycemic_axis,baja,"La glucosa alterada añade contexto metabólico, pero no debe activar sola este mecanismo.",0,1.0,1
+
+SMP_COH_01,sindrome_metabolico_patron,waist_cm,high,primary_driver,adiposity_axis,alta,"La adiposidad central es uno de los ejes definitorios del patrón compuesto.",1,1.0,1
+SMP_COH_02,sindrome_metabolico_patron,glucose_mg_dl,high,primary_driver,glycemic_axis,alta,"La glucosa alterada aporta el eje glucémico del síndrome metabólico.",1,1.0,1
+SMP_COH_03,sindrome_metabolico_patron,triglycerides_mg_dl,high,primary_driver,lipid_axis,alta,"Los triglicéridos altos representan un eje lipídico nuclear del patrón.",1,1.0,1
+SMP_COH_04,sindrome_metabolico_patron,hdl_mg_dl,low,supporting_driver,lipid_axis,media,"HDL bajo refuerza el componente aterogénico del patrón compuesto.",0,1.0,1
+SMP_COH_05,sindrome_metabolico_patron,hba1c_pct,high,supporting_driver,glycemic_axis,media,"La HbA1c añade estabilidad temporal al eje glucémico.",0,1.0,1
+SMP_COH_06,sindrome_metabolico_patron,bmi_kg_m2,high,supporting_driver,adiposity_axis,media,"El BMI refuerza el contexto adiposo, aunque la cintura tiene mayor valor fenotípico.",0,1.0,1
+SMP_COH_07,sindrome_metabolico_patron,insulin_uIU_ml,high,supporting_driver,insulin_axis,media,"La insulina elevada refuerza la integración metabólica del patrón sin definirlo por sí sola.",0,1.0,1
+
+EO_COH_01,estres_oxidativo,hscrp_mg_l,high,supporting_driver,inflammation_axis,media,"La PCR ultrasensible puede actuar como proxy indirecto de estrés oxidativo cuando converge con otras señales.",0,1.0,1
+EO_COH_02,estres_oxidativo,triglycerides_mg_dl,high,supporting_driver,metabolic_axis,baja,"Los triglicéridos altos pueden acompañar estados de estrés oxidativo metabólico.",0,1.0,1
+EO_COH_03,estres_oxidativo,glucose_mg_dl,high,support,glycemic_axis,baja,"La glucosa alterada puede reforzar la hipótesis, pero no debe actuar como driver único.",0,1.0,1
+EO_COH_04,estres_oxidativo,waist_cm,high,contextual_support,adiposity_axis,baja,"La adiposidad central añade contexto de estrés metabólico crónico.",0,1.0,1
+EO_COH_05,estres_oxidativo,ggt_u_l,high,supporting_driver,hepatic_axis,media,"La GGT elevada puede reforzar una lectura indirecta de estrés oxidativo y carga hepatometabólica.",0,1.0,1

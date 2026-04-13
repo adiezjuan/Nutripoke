@@ -1,0 +1,51 @@
+variable,sexo,rango_minimo_normal,rango_maximo_normal,critico_bajo,critico_alto,patologias_bajo,patologias_alto,panel_clinico,prioridad_fertilidad,notas
+age_years,ambos,18,120,,,-,-,demografico,baja,Edad IVF ajusta rangos
+albumin_g_dl,ambos,3.5,5,1.5,6,"Cirrosis,nefrosis,Nephrotic syndrome","Deshidratacion,Multiple myeloma",hep_renal,alta,↓ outcomes IVF por inflam cron
+alp_u_l,ambos,44,147,,441,Hipofosfatasia,"Colestasis,Paget bone",hepatica,media,
+alt_u_l,ambos,7,41,,1000,Raro def enzima,"Hepatitis fulminante,Isquemia hep",hepatica,media,Viral? ↑ leve; integra con AST/GGT
+apob_mg_dl,ambos,0,89,,200,-,Aterosclerosis avanzada,lipidos,media,Riesgo CV; Lp(a) complementa
+ast_u_l,ambos,10,40,,1000,Raro,"Infarto miocardio,Hemolisis",hepatica,media,Relacion ALT/AST >2: alcohol
+bilirubin_total_mg_dl,ambos,0.2,1.2,,20,-,"Obstruccion biliar,Hemolisis masiva",hepatica,media,Directa vs indirecta clave
+bmi_kg_m2,ambos,18.5,24.9,,,Malnutricion,Obesidad metabolica,metabolico,alta,BMI>30 ↓ receptividad endometrial
+chol_total_mg_dl,ambos,0,199,,1000,-,Hipercolesterolemia familiar,lipidos,media,HDL/LDL contexto
+creatinine_mg_dl,f,0.6,1.1,0.3,3,"Malnutricion,embarazo temprano","IRA,rabdomiolisis",renal,alta,Ajusta por masa muscular
+creatinine_mg_dl,m,0.8,1.3,0.3,6,Malnutricion,"IRA,obstruccion",renal,alta,eGFR complementa
+egfr_ml_min_1_73m2,ambos,90,inf,15,,ERC estadio 5,-,renal,alta,>90 ideal IVF
+esr_mm_h,ambos,0,20,,100,-,"Inflamacion sistemica,cancer",inflamacion,media,No especifico; PCR mejor
+ferritin_ng_ml,f,15,150,10,500,Ferropenica oculta,"Hemocromatosis,Inflam cron",hierro,alta,Anemia oculta comun IVF
+ferritin_ng_ml,m,30,400,10,1000,Ferropenica,Hemocromatosis,hierro,alta,Relaciona con TIBC/sat
+fibrinogen_mg_dl,ambos,200,400,100,700,DIC consumida,"Inflam aguda,FAP",coagulacion,media,
+folate_ng_ml,ambos,4,20,,,"Deficiencia folate,Megaloblastica",-,nutricional,alta,Neural tube IVF
+ft4_ng_dl,ambos,0.85,1.95,0.4,5,Hipotiroidismo severo,"Hipertiroidismo,tirotoxicosis",tiroides,alta,TSH + FT4
+ggt_u_l,ambos,10,50,,1000,-,"Alcoholica,Obstruccion biliar",hepatica,media,Inductor alcohol
+glucose_mg_dl,ambos,70,99,50,400,"Hipoglucemia reactiva,Addison","DKA,HHS",metabolica,alta,Ayunas; IR afecta implantacion
+hb_g_dl,f,11.5,14.5,7,18,"Anemia aplastica,Hemorragia",Policitemia vera,hematologia,alta,↓ oxigeno embrionario
+hb_g_dl,m,13.5,17.5,7,20,"Anemia aplastica,Hemorragia","Policitemia,deshidrat",hematologia,alta,
+hba1c_pct,ambos,4,5.6,3,14,Hemolisis cron,Diabetes pobre control,metabolica,alta,Promedio 3m; >6 prediabetes
+hct_pct,f,36,46,20,55,Anemia severa,Policitemia,hematologia,alta,Corregido: no 40-55
+hct_pct,m,41,50,20,60,Anemia severa,Policitemia,hematologia,alta,
+hdl_mg_dl,f,50,inf,,,-,-,lipidos,media,Corregido >50 protect CV
+hdl_mg_dl,m,40,inf,,,-,-,lipidos,media,>40
+hscrp_mg_l,ambos,0,1,,10,-,"MACS,Infeccion aguda",inflamacion,alta,hsCRP >3 predice fracaso IVF [estudios]
+insulin_uIU_ml,ambos,2,12,1,100,Hipopituitarismo,"Insulinoma,IR severa",metabolica,alta,Ayunas con glucose
+iron_ug_dl,ambos,75,150,20,300,Def hierro,Sobrecarga hierro,hierro,alta,Diurno varia
+ldl_mg_dl,ambos,0,99,,500,-,Aterosclerosis acelerada,lipidos,media,Calculado o directo
+lpa_nmol_l,ambos,0,124,,400,-,Riesgo CV genetico,lipidos_cv,media,Lp(a) no baja con estatinas
+lymph_abs_x10_3_mm3,ambos,1,4.8,0.5,10,Inmunodeficiencia,"Linfoma,Viral cron",hematologia,media,Viral: ↑
+mcv_fl,ambos,80,100,60,120,Ferropenica/talasemia,B12/folato def,hematologia,alta,Clasifica anemia con Hb/RDW
+neut_abs_x10_3_mm3,ambos,1.8,7.5,0.5,20,Neutropenia febril,"Leucemia mieloide,Bacteriana",hematologia,media,Bacteriana: ↑↑ + bandas
+platelets_x10_3_uL,ambos,150,400,20,1000,"TTP,HIT,Quimio",Trombocitemia esencial,hematologia,media,Reactiva infeccion
+rbc_x10_6_mm3,ambos,4.5,6.1,2,7,"Anemia,Hemolisis",Policitemia,hematologia,alta,
+rdw_pct,ambos,12,15,,20,-,Anemia dismorfica/megaloblastica,hematologia,alta,↑ en hemorragia postaguda
+tibc_ug_dl,ambos,250,450,,500,-,Anemia ferropenica,hierro,alta,↑ en def hierro
+transferrin_mg_dl,ambos,215,365,,,-,Inflamacion aguda,hierro,alta,
+transferrin_sat_pct,ambos,20,50,,90,-,Sobrecarga hierro,hierro,alta,
+triglycerides_mg_dl,ambos,0,149,,1000,-,Pancreatitis aguda,lipidos,media,Ayunas obligatoria
+tsh_mIU_l,ambos,0.4,4,0.01,100,"Tirotoxicosis,bocio toxico",Hipotiroidismo primario,tiroides,alta,Subclinico >2.5 afecta receptividad
+uacr_mg_g,ambos,0,29,,500,-,"Nefropatia diabetica,glomerulonefritis",renal,alta,Microalbuminuria precoz
+urea_mg_dl,ambos,15,40,5,150,Hepatica severa,"Obstruccion postrenal,GI bleed",renal,media,Urea/Cr >20: sangre digerida
+uric_acid_mg_dl,ambos,3.5,7.2,,15,-,"Gota,Sobreproduccion purinas",metabolico,baja,
+vitb12_pg_ml,ambos,200,900,150,2000,"Deficiencia B12,neurologica",Leucemia suplemento,nutricional,alta,Megaloblastica con folate
+waist_cm,f,0,88,,,-,Sindrome metabolico,metabolico,alta,Corregido <88 mujeres
+waist_cm,m,0,102,,,-,Sindrome metabolico,metabolico,alta,<102 hombres
+wbc_x10_3_mm3,ambos,4,10,1,50,Neutropenia sepsis,Leucemia aguda,hematologia,media,Diferencia viral (linf↑) vs bact (neut↑↑)

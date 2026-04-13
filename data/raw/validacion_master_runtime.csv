@@ -1,0 +1,5 @@
+issue,count,recommendation
+requiere_contexto_todo_si,201,Revisar reglas que pueden activarse sin contexto
+sexo_scope_todo_all,201,Revisar reglas sexo-específicas
+competidores_casi_vacio,189,Añadir competidores en analitos ambiguos
+context_gate_uniforme,201,El runtime actual no diferencia grados de contexto

@@ -1,0 +1,14 @@
+rule_id,species_id,primary_cloud_domain,secondary_cloud_domain,form_id,form_label,tone,temperament,priority,is_enabled,notes
+pf_001,fenotipo_cardiometabolico,lipidico,,aterogenica,aterogénica,cronico-metabolico,estable,100,1,
+pf_002,fenotipo_cardiometabolico,glucemico,,glucocentrada,glucocentrada,cronico-metabolico,estable,100,1,
+pf_003,fenotipo_cardiometabolico,visceral,,visceral,visceral,cronico-metabolico,complejo,100,1,
+pf_004,fenotipo_cardiometabolico,inflamatorio,,inflamatoria,inflamatoria,cronico-metabolico,reactivo,100,1,
+pf_005,fenotipo_cardiometabolico_ir_atero,lipidico,,aterogenica,aterogénica,cronico-metabolico,estable,120,1,Especie específica
+pf_006,fenotipo_cardiometabolico_ir_visceral,visceral,,visceral,visceral,cronico-metabolico,complejo,120,1,Especie específica
+pf_007,fenotipo_hepatico_metabolico,hepatico,,hepatometabolica,hepatometabólica,metabolico-hepatico,estable,100,1,
+pf_008,fenotipo_hepatico_metabolico,inflamatorio,,reactiva,reactiva,metabolico-hepatico,reactivo,90,1,
+pf_009,fenotipo_inflamatorio,inflamatorio,,reactiva,reactiva,reactivo,intenso,100,1,
+pf_010,fenotipo_renal,renal,,filtrado,filtrado,estructural,estable,100,1,
+pf_011,fenotipo_hematologico,hematologico,,hematica,hemática,estructural,estable,100,1,
+pf_012,fenotipo_endocrino,endocrino,,hormonal,hormonal,regulatorio,estable,100,1,
+pf_013,fenotipo_mixto,mixto,,basal,basal,mixto,estable,10,1,Fallback

@@ -1,0 +1,13 @@
+case_id,case_name,case_type,age_years,sex,bmi_kg_m2,waist_cm,glucose_mg_dl,hba1c_pct,insulin_uIU_ml,chol_total_mg_dl,ldl_mg_dl,hdl_mg_dl,triglycerides_mg_dl,apob_mg_dl,alt_u_l,ast_u_l,ggt_u_l,creatinine_mg_dl,egfr_ml_min_1_73m2,hscrp_mg_l,neut_abs_x10_3_mm3,lymph_abs_x10_3_mm3,ferritin_ng_ml,esr_mm_h,fibrinogen_mg_dl,wbc_x10_3_mm3,albumin_g_dl,uric_acid_mg_dl,alcohol,sleep,meds
+C01,Normal limpio,baseline,45,M,23.5,84,88,5.2,6,178,102,58,82,78,22,21,18,0.92,96,0.8,3.2,2.0,110,8,290,6.1,4.5,5.4,No,Bueno,False
+C02,Normal incompleto,baseline_incomplete,44,M,24.1,86,90,5.3,,182,108,55,88,,24,22,,0.95,94,,3.4,2.1,,,,6.3,4.4,,No,Bueno,False
+C03,Señal aislada leve,noise_control,46,M,24.9,88,99,5.4,7,188,112,54,96,86,23,21,19,0.91,97,0.9,3.5,2.2,115,10,300,6.4,4.4,5.5,No,Bueno,False
+C04,Glucosa aislada,confusing_glucose,46,M,24.8,87,103,5.3,6,186,111,56,91,84,20,19,18,0.90,98,0.9,3.4,2.2,108,9,295,6.0,4.5,5.3,No,Bueno,False
+C05,TG altos aislados,confusing_lipids,48,M,24.6,86,92,5.3,7,205,118,52,198,89,24,22,20,0.93,96,1.0,3.3,2.1,120,10,305,6.2,4.5,5.6,No,Bueno,False
+C06,PCR aislada,confusing_inflammation,47,M,24.7,87,91,5.3,7,184,110,55,92,82,22,21,19,0.92,97,4.8,3.8,2.2,125,18,360,6.8,4.4,5.4,No,Bueno,False
+C07,Adiposidad aislada,confusing_adiposity,49,M,31.0,108,95,5.4,8,198,120,51,112,92,26,23,21,0.96,95,1.1,3.6,2.1,130,10,310,6.4,4.5,5.8,No,Irregular,False
+C08,Insulinorresistencia clara,clear_ir,49,M,31.2,109,114,6.0,22,228,142,37,228,118,42,31,29,1.00,90,3.4,4.8,1.8,165,16,390,7.4,4.3,6.4,Ocasional,Malo,False
+C09,Disfunción glucídica clara,clear_glucose,50,M,26.4,94,126,6.4,11,210,128,48,132,96,28,24,22,0.94,95,1.4,3.9,2.0,140,12,320,6.6,4.4,5.7,No,Irregular,False
+C10,Dislipidemia aterogénica clara,clear_lipids,51,M,27.8,99,95,5.4,8,252,158,33,248,138,26,23,21,0.94,95,1.7,3.8,2.0,135,10,315,6.5,4.5,5.9,No,Bueno,False
+C11,Inflamación clara,clear_inflammation,48,M,25.6,89,94,5.3,8,190,114,52,108,90,24,23,20,0.91,98,6.2,5.6,1.7,320,28,470,9.8,4.1,5.6,No,Irregular,False
+C12,Patrón metabólico mixto claro,mixed_clear,52,M,32.4,112,118,6.1,19,244,150,36,236,126,39,30,32,0.99,91,3.8,4.9,1.9,175,18,405,7.8,4.3,6.6,Ocasional,Malo,False

@@ -1,0 +1,10 @@
+rule_id,fusion_group,requires_labels_any,requires_labels_all,min_personajes,species_id,species_label,priority,is_enabled,notes
+pk_001,cardiometabolico,Insulinorresistencia|Dislipidemia Aterogenica|Adiposidad Visceral,,2,fenotipo_cardiometabolico,Fenotipo cardiometabólico,100,1,Fusión base cardiometabólica
+pk_002,cardiometabolico,Insulinorresistencia|Dislipidemia Aterogenica,Insulinorresistencia|Dislipidemia Aterogenica,2,fenotipo_cardiometabolico_ir_atero,Fenotipo cardiometabólico insulinorresistente-aterogénico,120,1,Más específico
+pk_003,cardiometabolico,Insulinorresistencia|Adiposidad Visceral,Insulinorresistencia|Adiposidad Visceral,2,fenotipo_cardiometabolico_ir_visceral,Fenotipo cardiometabólico insulinorresistente-visceral,130,1,Visceral con IR
+pk_004,hepatico_metabolico,Sobrecarga Hepatometabolica|Daño Hepatocelular|Componente Hepatobiliar,,1,fenotipo_hepatico_metabolico,Fenotipo hepático-metabólico,90,1,
+pk_005,inflamatorio,Inflamación Metabólica|Tono Inflamatorio Crónico|Inflamación Sistémica,,1,fenotipo_inflamatorio,Fenotipo inflamatorio,90,1,
+pk_006,renal,Deterioro Filtrado|Compromiso Renal|Retención Nitrogenada,,1,fenotipo_renal,Fenotipo renal,90,1,
+pk_007,hematologico,Ferropenia|Anemia Microcitica|Anemia Inflamatoria|Déficit B12/Folato,,1,fenotipo_hematologico,Fenotipo hematológico,90,1,
+pk_008,endocrino,Hipotiroidismo Funcional|Hipertiroidismo Funcional|Desacople Tiroideo Subclínico,,1,fenotipo_endocrino,Fenotipo endocrino,90,1,
+pk_009,mixto,,,1,fenotipo_mixto,Fenotipo mixto,10,1,Fallback

@@ -1,0 +1,202 @@
+rule_id,mechanism_id,variable_key,role,activation_mode,weight,combo_group,is_primary,evidence_tier,clinical_rationale,is_enabled
+VM001,insulinorresistencia,glucose_mg_dl,primary_driver,high,0.86,glucemia,1,alta,Driver principal: elevación de glucose_mg_dl apoya el grupo glucemia.,1
+VM002,insulinorresistencia,hba1c_pct,primary_driver,high,0.86,glucemia,1,alta,Driver principal: elevación de hba1c_pct apoya el grupo glucemia.,1
+VM003,insulinorresistencia,insulin_uIU_ml,primary_driver,high,0.86,insulina,1,alta,Driver principal: elevación de insulin_uIU_ml apoya el grupo insulina.,1
+VM004,insulinorresistencia,triglycerides_mg_dl,primary_driver,high,0.86,dislipidemia,1,alta,Driver principal: elevación de triglycerides_mg_dl apoya el grupo dislipidemia.,1
+VM005,insulinorresistencia,hdl_mg_dl,supporting_driver,low,0.48,dislipidemia,0,media,Driver de soporte: descenso de hdl_mg_dl apoya el grupo dislipidemia.,1
+VM006,insulinorresistencia,alt_u_l,contextual_support,high,0.17,hepatico,0,baja,Contexto: elevación de alt_u_l apoya el grupo hepatico.,1
+VM007,insulinorresistencia,uric_acid_mg_dl,supporting_driver,high,0.37,contexto,0,baja,Driver de soporte: elevación de uric_acid_mg_dl apoya el grupo contexto.,1
+VM008,insulinorresistencia,bmi_kg_m2,supporting_driver,high,0.37,adiposidad,0,baja,Driver de soporte: elevación de bmi_kg_m2 apoya el grupo adiposidad.,1
+VM009,insulinorresistencia,waist_cm,primary_driver,high,0.86,adiposidad,1,alta,Driver principal: elevación de waist_cm apoya el grupo adiposidad.,1
+VM010,insulinorresistencia,apob_mg_dl,supporting_driver,high,0.37,dislipidemia,0,baja,Driver de soporte: elevación de apob_mg_dl apoya el grupo dislipidemia.,1
+VM011,disfuncion_glucidica,glucose_mg_dl,primary_driver,low,0.95,glucemia,1,alta,Driver principal: descenso de glucose_mg_dl apoya el grupo glucemia.,1
+VM012,disfuncion_glucidica,glucose_mg_dl,primary_driver,high,0.95,glucemia,1,alta,Driver principal: elevación de glucose_mg_dl apoya el grupo glucemia.,1
+VM013,disfuncion_glucidica,hba1c_pct,primary_driver,low,0.95,glucemia,1,alta,Driver principal: descenso de hba1c_pct apoya el grupo glucemia.,1
+VM014,disfuncion_glucidica,hba1c_pct,primary_driver,high,0.95,glucemia,1,alta,Driver principal: elevación de hba1c_pct apoya el grupo glucemia.,1
+VM015,disfuncion_glucidica,insulin_uIU_ml,supporting_driver,low,0.43,insulina,0,media,Driver de soporte: descenso de insulin_uIU_ml apoya el grupo insulina.,1
+VM016,disfuncion_glucidica,insulin_uIU_ml,supporting_driver,high,0.43,insulina,0,media,Driver de soporte: elevación de insulin_uIU_ml apoya el grupo insulina.,1
+VM017,disfuncion_glucidica,triglycerides_mg_dl,contextual_support,high,0.17,dislipidemia,0,baja,Contexto: elevación de triglycerides_mg_dl apoya el grupo dislipidemia.,1
+VM018,disfuncion_glucidica,waist_cm,supporting_driver,high,0.37,adiposidad,0,baja,Driver de soporte: elevación de waist_cm apoya el grupo adiposidad.,1
+VM019,disfuncion_glucidica,uacr_mg_g,contextual_support,high,0.17,lesion_microvascular,0,baja,Contexto: elevación de uacr_mg_g apoya el grupo lesion_microvascular.,1
+VM020,dislipidemia_aterogenica,insulin_uIU_ml,contextual_support,high,0.17,glucometabolico,0,baja,Contexto: elevación de insulin_uIU_ml apoya el grupo glucometabolico.,1
+VM021,dislipidemia_aterogenica,triglycerides_mg_dl,primary_driver,high,1.0,tg_hdl,1,alta,Driver principal: elevación de triglycerides_mg_dl apoya el grupo tg_hdl.,1
+VM022,dislipidemia_aterogenica,ldl_mg_dl,supporting_driver,high,0.48,carga_aterogenica,0,media,Driver de soporte: elevación de ldl_mg_dl apoya el grupo carga_aterogenica.,1
+VM023,dislipidemia_aterogenica,hdl_mg_dl,primary_driver,low,0.86,tg_hdl,1,alta,Driver principal: descenso de hdl_mg_dl apoya el grupo tg_hdl.,1
+VM024,dislipidemia_aterogenica,chol_total_mg_dl,contextual_support,high,0.17,carga_aterogenica,0,baja,Contexto: elevación de chol_total_mg_dl apoya el grupo carga_aterogenica.,1
+VM025,dislipidemia_aterogenica,waist_cm,supporting_driver,high,0.37,adiposidad,0,baja,Driver de soporte: elevación de waist_cm apoya el grupo adiposidad.,1
+VM026,dislipidemia_aterogenica,apob_mg_dl,primary_driver,high,1.0,carga_aterogenica,1,alta,Driver principal: elevación de apob_mg_dl apoya el grupo carga_aterogenica.,1
+VM027,dislipidemia_aterogenica,lpa_nmol_l,primary_driver,high,0.82,carga_aterogenica,1,alta,Driver principal: elevación de lpa_nmol_l apoya el grupo carga_aterogenica.,1
+VM028,riesgo_cardiometabolico_global,glucose_mg_dl,supporting_driver,high,0.34,glucometabolico,0,baja,Driver de soporte: elevación de glucose_mg_dl apoya el grupo glucometabolico.,1
+VM029,riesgo_cardiometabolico_global,hba1c_pct,supporting_driver,high,0.34,glucometabolico,0,baja,Driver de soporte: elevación de hba1c_pct apoya el grupo glucometabolico.,1
+VM030,riesgo_cardiometabolico_global,triglycerides_mg_dl,supporting_driver,high,0.44,tg_hdl,0,media,Driver de soporte: elevación de triglycerides_mg_dl apoya el grupo tg_hdl.,1
+VM031,riesgo_cardiometabolico_global,ldl_mg_dl,supporting_driver,high,0.44,carga_aterogenica,0,media,Driver de soporte: elevación de ldl_mg_dl apoya el grupo carga_aterogenica.,1
+VM032,riesgo_cardiometabolico_global,hdl_mg_dl,supporting_driver,low,0.34,tg_hdl,0,baja,Driver de soporte: descenso de hdl_mg_dl apoya el grupo tg_hdl.,1
+VM033,riesgo_cardiometabolico_global,hscrp_mg_l,supporting_driver,high,0.34,contexto_riesgo,0,baja,Driver de soporte: elevación de hscrp_mg_l apoya el grupo contexto_riesgo.,1
+VM034,riesgo_cardiometabolico_global,uric_acid_mg_dl,contextual_support,high,0.16,contexto_riesgo,0,baja,Contexto: elevación de uric_acid_mg_dl apoya el grupo contexto_riesgo.,1
+VM035,riesgo_cardiometabolico_global,bmi_kg_m2,contextual_support,high,0.16,adiposidad,0,baja,Contexto: elevación de bmi_kg_m2 apoya el grupo adiposidad.,1
+VM036,riesgo_cardiometabolico_global,waist_cm,supporting_driver,high,0.34,adiposidad,0,baja,Driver de soporte: elevación de waist_cm apoya el grupo adiposidad.,1
+VM037,riesgo_cardiometabolico_global,uacr_mg_g,contextual_support,high,0.21,contexto_riesgo,0,baja,Contexto: elevación de uacr_mg_g apoya el grupo contexto_riesgo.,1
+VM038,riesgo_cardiometabolico_global,apob_mg_dl,primary_driver,high,0.97,carga_aterogenica,1,alta,Driver principal: elevación de apob_mg_dl apoya el grupo carga_aterogenica.,1
+VM039,riesgo_cardiometabolico_global,lpa_nmol_l,primary_driver,high,0.75,carga_aterogenica,1,alta,Driver principal: elevación de lpa_nmol_l apoya el grupo carga_aterogenica.,1
+VM040,carga_hiperuricemica,insulin_uIU_ml,contextual_support,high,0.17,metabolico,0,baja,Contexto: elevación de insulin_uIU_ml apoya el grupo metabolico.,1
+VM041,carga_hiperuricemica,triglycerides_mg_dl,contextual_support,high,0.17,metabolico,0,baja,Contexto: elevación de triglycerides_mg_dl apoya el grupo metabolico.,1
+VM042,carga_hiperuricemica,creatinine_mg_dl,contextual_support,high,0.17,renal,0,baja,Contexto: elevación de creatinine_mg_dl apoya el grupo renal.,1
+VM043,carga_hiperuricemica,egfr_ml_min_1_73m2,supporting_driver,low,0.48,renal,0,media,Driver de soporte: descenso de egfr_ml_min_1_73m2 apoya el grupo renal.,1
+VM044,carga_hiperuricemica,uric_acid_mg_dl,primary_driver,high,1.0,urato,1,alta,Driver principal: elevación de uric_acid_mg_dl apoya el grupo urato.,1
+VM045,carga_hiperuricemica,urea_mg_dl,contextual_support,high,0.17,renal,0,baja,Contexto: elevación de urea_mg_dl apoya el grupo renal.,1
+VM046,carga_hiperuricemica,waist_cm,contextual_support,high,0.17,metabolico,0,baja,Contexto: elevación de waist_cm apoya el grupo metabolico.,1
+VM047,sindrome_metabolico_patron,glucose_mg_dl,primary_driver,high,0.97,glucemia,1,alta,Driver principal: elevación de glucose_mg_dl apoya el grupo glucemia.,1
+VM048,sindrome_metabolico_patron,hba1c_pct,supporting_driver,high,0.44,glucemia,0,media,Driver de soporte: elevación de hba1c_pct apoya el grupo glucemia.,1
+VM049,sindrome_metabolico_patron,insulin_uIU_ml,supporting_driver,high,0.44,insulina,0,media,Driver de soporte: elevación de insulin_uIU_ml apoya el grupo insulina.,1
+VM050,sindrome_metabolico_patron,triglycerides_mg_dl,primary_driver,high,0.97,dislipidemia,1,alta,Driver principal: elevación de triglycerides_mg_dl apoya el grupo dislipidemia.,1
+VM051,sindrome_metabolico_patron,hdl_mg_dl,primary_driver,low,0.97,dislipidemia,1,alta,Driver principal: descenso de hdl_mg_dl apoya el grupo dislipidemia.,1
+VM052,sindrome_metabolico_patron,hscrp_mg_l,contextual_support,high,0.16,contexto,0,baja,Contexto: elevación de hscrp_mg_l apoya el grupo contexto.,1
+VM053,sindrome_metabolico_patron,bmi_kg_m2,supporting_driver,high,0.34,adiposidad,0,baja,Driver de soporte: elevación de bmi_kg_m2 apoya el grupo adiposidad.,1
+VM054,sindrome_metabolico_patron,waist_cm,primary_driver,high,0.97,adiposidad,1,alta,Driver principal: elevación de waist_cm apoya el grupo adiposidad.,1
+VM055,carga_pancreatica_glucidica,glucose_mg_dl,primary_driver,high,0.86,glucemia,1,alta,Driver principal: elevación de glucose_mg_dl apoya el grupo glucemia.,1
+VM056,carga_pancreatica_glucidica,hba1c_pct,supporting_driver,high,0.48,glucemia,0,media,Driver de soporte: elevación de hba1c_pct apoya el grupo glucemia.,1
+VM057,carga_pancreatica_glucidica,insulin_uIU_ml,primary_driver,low,0.81,insulina,1,alta,Driver principal: descenso de insulin_uIU_ml apoya el grupo insulina.,1
+VM058,carga_pancreatica_glucidica,insulin_uIU_ml,primary_driver,high,0.81,insulina,1,alta,Driver principal: elevación de insulin_uIU_ml apoya el grupo insulina.,1
+VM059,carga_pancreatica_glucidica,triglycerides_mg_dl,supporting_driver,high,0.37,dislipidemia,0,baja,Driver de soporte: elevación de triglycerides_mg_dl apoya el grupo dislipidemia.,1
+VM060,carga_pancreatica_glucidica,waist_cm,supporting_driver,high,0.37,adiposidad,0,baja,Driver de soporte: elevación de waist_cm apoya el grupo adiposidad.,1
+VM061,estado_purinico,triglycerides_mg_dl,contextual_support,high,0.15,metabolico,0,baja,Contexto: elevación de triglycerides_mg_dl apoya el grupo metabolico.,1
+VM062,estado_purinico,creatinine_mg_dl,contextual_support,high,0.15,renal,0,baja,Contexto: elevación de creatinine_mg_dl apoya el grupo renal.,1
+VM063,estado_purinico,egfr_ml_min_1_73m2,supporting_driver,low,0.44,renal,0,media,Driver de soporte: descenso de egfr_ml_min_1_73m2 apoya el grupo renal.,1
+VM064,estado_purinico,uric_acid_mg_dl,primary_driver,low,0.9,urato,1,alta,Driver principal: descenso de uric_acid_mg_dl apoya el grupo urato.,1
+VM065,estado_purinico,uric_acid_mg_dl,primary_driver,high,0.9,urato,1,alta,Driver principal: elevación de uric_acid_mg_dl apoya el grupo urato.,1
+VM066,estado_purinico,urea_mg_dl,contextual_support,high,0.15,renal,0,baja,Contexto: elevación de urea_mg_dl apoya el grupo renal.,1
+VM067,inflamacion,hdl_mg_dl,contextual_support,low,0.17,consumo_negativos,0,baja,Contexto: descenso de hdl_mg_dl apoya el grupo consumo_negativos.,1
+VM068,inflamacion,hscrp_mg_l,primary_driver,high,0.86,reactantes,1,alta,Driver principal: elevación de hscrp_mg_l apoya el grupo reactantes.,1
+VM069,inflamacion,esr_mm_h,supporting_driver,high,0.37,reactantes,0,baja,Driver de soporte: elevación de esr_mm_h apoya el grupo reactantes.,1
+VM070,inflamacion,fibrinogen_mg_dl,supporting_driver,high,0.37,reactantes,0,baja,Driver de soporte: elevación de fibrinogen_mg_dl apoya el grupo reactantes.,1
+VM071,inflamacion,wbc_x10_3_mm3,supporting_driver,high,0.37,celular,0,baja,Driver de soporte: elevación de wbc_x10_3_mm3 apoya el grupo celular.,1
+VM072,inflamacion,neut_abs_x10_3_mm3,supporting_driver,high,0.37,celular,0,baja,Driver de soporte: elevación de neut_abs_x10_3_mm3 apoya el grupo celular.,1
+VM073,inflamacion,ferritin_ng_ml,contextual_support,high,0.17,reactantes,0,baja,Contexto: elevación de ferritin_ng_ml apoya el grupo reactantes.,1
+VM074,inflamacion,platelets_x10_3_uL,contextual_support,high,0.17,celular,0,baja,Contexto: elevación de platelets_x10_3_uL apoya el grupo celular.,1
+VM075,inflamacion,albumin_g_dl,supporting_driver,low,0.37,consumo_negativos,0,baja,Driver de soporte: descenso de albumin_g_dl apoya el grupo consumo_negativos.,1
+VM076,activacion_inmune,hscrp_mg_l,supporting_driver,high,0.33,reactantes,0,baja,Driver de soporte: elevación de hscrp_mg_l apoya el grupo reactantes.,1
+VM077,activacion_inmune,esr_mm_h,contextual_support,high,0.15,reactantes,0,baja,Contexto: elevación de esr_mm_h apoya el grupo reactantes.,1
+VM078,activacion_inmune,fibrinogen_mg_dl,contextual_support,high,0.15,reactantes,0,baja,Contexto: elevación de fibrinogen_mg_dl apoya el grupo reactantes.,1
+VM079,activacion_inmune,wbc_x10_3_mm3,supporting_driver,high,0.42,celular,0,media,Driver de soporte: elevación de wbc_x10_3_mm3 apoya el grupo celular.,1
+VM080,activacion_inmune,neut_abs_x10_3_mm3,supporting_driver,high,0.42,celular,0,media,Driver de soporte: elevación de neut_abs_x10_3_mm3 apoya el grupo celular.,1
+VM081,activacion_inmune,lymph_abs_x10_3_mm3,supporting_driver,low,0.28,celular,0,baja,Driver de soporte: descenso de lymph_abs_x10_3_mm3 apoya el grupo celular.,1
+VM082,activacion_inmune,lymph_abs_x10_3_mm3,supporting_driver,high,0.28,celular,0,baja,Driver de soporte: elevación de lymph_abs_x10_3_mm3 apoya el grupo celular.,1
+VM083,activacion_inmune,ferritin_ng_ml,contextual_support,high,0.15,reactantes,0,baja,Contexto: elevación de ferritin_ng_ml apoya el grupo reactantes.,1
+VM084,activacion_inmune,platelets_x10_3_uL,contextual_support,high,0.15,celular,0,baja,Contexto: elevación de platelets_x10_3_uL apoya el grupo celular.,1
+VM085,estres_oxidativo,hba1c_pct,contextual_support,high,0.15,metabolico_oxidativo,0,baja,Contexto: elevación de hba1c_pct apoya el grupo metabolico_oxidativo.,1
+VM086,estres_oxidativo,triglycerides_mg_dl,contextual_support,high,0.15,metabolico_oxidativo,0,baja,Contexto: elevación de triglycerides_mg_dl apoya el grupo metabolico_oxidativo.,1
+VM087,estres_oxidativo,hdl_mg_dl,contextual_support,low,0.15,consumo_negativos,0,baja,Contexto: descenso de hdl_mg_dl apoya el grupo consumo_negativos.,1
+VM088,estres_oxidativo,hscrp_mg_l,supporting_driver,high,0.33,reactantes,0,baja,Driver de soporte: elevación de hscrp_mg_l apoya el grupo reactantes.,1
+VM089,estres_oxidativo,ferritin_ng_ml,contextual_support,high,0.15,reactantes,0,baja,Contexto: elevación de ferritin_ng_ml apoya el grupo reactantes.,1
+VM090,estres_oxidativo,alt_u_l,contextual_support,high,0.15,metabolico_oxidativo,0,baja,Contexto: elevación de alt_u_l apoya el grupo metabolico_oxidativo.,1
+VM091,estres_oxidativo,ggt_u_l,supporting_driver,high,0.33,metabolico_oxidativo,0,baja,Driver de soporte: elevación de ggt_u_l apoya el grupo metabolico_oxidativo.,1
+VM092,estres_oxidativo,uric_acid_mg_dl,contextual_support,low,0.15,metabolico_oxidativo,0,baja,Contexto: descenso de uric_acid_mg_dl apoya el grupo metabolico_oxidativo.,1
+VM093,estres_oxidativo,uric_acid_mg_dl,contextual_support,high,0.15,metabolico_oxidativo,0,baja,Contexto: elevación de uric_acid_mg_dl apoya el grupo metabolico_oxidativo.,1
+VM094,permeabilidad_intestinal_inflamacion_baja,hscrp_mg_l,contextual_support,high,0.15,reactantes,0,baja,Contexto: elevación de hscrp_mg_l apoya el grupo reactantes.,0
+VM095,permeabilidad_intestinal_inflamacion_baja,lymph_abs_x10_3_mm3,contextual_support,low,0.15,celular,0,baja,Contexto: descenso de lymph_abs_x10_3_mm3 apoya el grupo celular.,0
+VM096,permeabilidad_intestinal_inflamacion_baja,lymph_abs_x10_3_mm3,contextual_support,high,0.15,celular,0,baja,Contexto: elevación de lymph_abs_x10_3_mm3 apoya el grupo celular.,0
+VM097,permeabilidad_intestinal_inflamacion_baja,ferritin_ng_ml,contextual_support,high,0.15,reactantes,0,baja,Contexto: elevación de ferritin_ng_ml apoya el grupo reactantes.,0
+VM098,permeabilidad_intestinal_inflamacion_baja,albumin_g_dl,contextual_support,low,0.15,consumo_negativos,0,baja,Contexto: descenso de albumin_g_dl apoya el grupo consumo_negativos.,0
+VM099,deficit_hierro_eritropoyesis,hb_g_dl,primary_driver,low,0.86,hemograma,1,alta,Driver principal: descenso de hb_g_dl apoya el grupo hemograma.,1
+VM100,deficit_hierro_eritropoyesis,hct_pct,supporting_driver,low,0.37,hemograma,0,baja,Driver de soporte: descenso de hct_pct apoya el grupo hemograma.,1
+VM101,deficit_hierro_eritropoyesis,rbc_x10_6_mm3,supporting_driver,low,0.37,hemograma,0,baja,Driver de soporte: descenso de rbc_x10_6_mm3 apoya el grupo hemograma.,1
+VM102,deficit_hierro_eritropoyesis,mcv_fl,primary_driver,low,0.86,hemograma,1,alta,Driver principal: descenso de mcv_fl apoya el grupo hemograma.,1
+VM103,deficit_hierro_eritropoyesis,rdw_pct,primary_driver,high,0.86,hemograma,1,alta,Driver principal: elevación de rdw_pct apoya el grupo hemograma.,1
+VM104,deficit_hierro_eritropoyesis,ferritin_ng_ml,primary_driver,low,0.86,hierro,1,alta,Driver principal: descenso de ferritin_ng_ml apoya el grupo hierro.,1
+VM105,deficit_hierro_eritropoyesis,iron_ug_dl,supporting_driver,low,0.37,hierro,0,baja,Driver de soporte: descenso de iron_ug_dl apoya el grupo hierro.,1
+VM106,deficit_hierro_eritropoyesis,transferrin_mg_dl,supporting_driver,high,0.48,hierro,0,media,Driver de soporte: elevación de transferrin_mg_dl apoya el grupo hierro.,1
+VM107,deficit_hierro_eritropoyesis,transferrin_sat_pct,primary_driver,low,1.0,hierro,1,alta,Driver principal: descenso de transferrin_sat_pct apoya el grupo hierro.,1
+VM108,deficit_hierro_eritropoyesis,tibc_ug_dl,primary_driver,high,0.86,hierro,1,alta,Driver principal: elevación de tibc_ug_dl apoya el grupo hierro.,1
+VM109,deficit_hierro_eritropoyesis,platelets_x10_3_uL,contextual_support,high,0.17,hemograma,0,baja,Contexto: elevación de platelets_x10_3_uL apoya el grupo hemograma.,1
+VM110,sobrecarga_ferrica,ferritin_ng_ml,primary_driver,high,0.86,hierro,1,alta,Driver principal: elevación de ferritin_ng_ml apoya el grupo hierro.,1
+VM111,sobrecarga_ferrica,iron_ug_dl,supporting_driver,high,0.48,hierro,0,media,Driver de soporte: elevación de iron_ug_dl apoya el grupo hierro.,1
+VM112,sobrecarga_ferrica,transferrin_mg_dl,supporting_driver,low,0.48,hierro,0,media,Driver de soporte: descenso de transferrin_mg_dl apoya el grupo hierro.,1
+VM113,sobrecarga_ferrica,transferrin_sat_pct,primary_driver,high,1.0,hierro,1,alta,Driver principal: elevación de transferrin_sat_pct apoya el grupo hierro.,1
+VM114,sobrecarga_ferrica,tibc_ug_dl,supporting_driver,low,0.48,hierro,0,media,Driver de soporte: descenso de tibc_ug_dl apoya el grupo hierro.,1
+VM115,sobrecarga_ferrica,alt_u_l,contextual_support,high,0.17,hepatico,0,baja,Contexto: elevación de alt_u_l apoya el grupo hepatico.,1
+VM116,sobrecarga_ferrica,ast_u_l,contextual_support,high,0.17,hepatico,0,baja,Contexto: elevación de ast_u_l apoya el grupo hepatico.,1
+VM117,sobrecarga_ferrica,ggt_u_l,contextual_support,high,0.17,hepatico,0,baja,Contexto: elevación de ggt_u_l apoya el grupo hepatico.,1
+VM118,eje_b12_folato,hb_g_dl,supporting_driver,low,0.37,hemograma,0,baja,Driver de soporte: descenso de hb_g_dl apoya el grupo hemograma.,1
+VM119,eje_b12_folato,hct_pct,contextual_support,low,0.17,hemograma,0,baja,Contexto: descenso de hct_pct apoya el grupo hemograma.,1
+VM120,eje_b12_folato,rbc_x10_6_mm3,contextual_support,low,0.17,hemograma,0,baja,Contexto: descenso de rbc_x10_6_mm3 apoya el grupo hemograma.,1
+VM121,eje_b12_folato,mcv_fl,supporting_driver,high,0.48,hemograma,0,media,Driver de soporte: elevación de mcv_fl apoya el grupo hemograma.,1
+VM122,eje_b12_folato,rdw_pct,supporting_driver,high,0.37,hemograma,0,baja,Driver de soporte: elevación de rdw_pct apoya el grupo hemograma.,1
+VM123,eje_b12_folato,vitb12_pg_ml,primary_driver,low,1.0,vitaminas,1,alta,Driver principal: descenso de vitb12_pg_ml apoya el grupo vitaminas.,1
+VM124,eje_b12_folato,folate_ng_ml,primary_driver,low,1.0,vitaminas,1,alta,Driver principal: descenso de folate_ng_ml apoya el grupo vitaminas.,1
+VM125,alteracion_metabolismo_folato_b12_homocisteina,mcv_fl,supporting_driver,high,0.44,hemograma,0,media,Driver de soporte: elevación de mcv_fl apoya el grupo hemograma.,1
+VM126,alteracion_metabolismo_folato_b12_homocisteina,rdw_pct,supporting_driver,high,0.33,hemograma,0,baja,Driver de soporte: elevación de rdw_pct apoya el grupo hemograma.,1
+VM127,alteracion_metabolismo_folato_b12_homocisteina,vitb12_pg_ml,primary_driver,low,0.95,vitaminas,1,alta,Driver principal: descenso de vitb12_pg_ml apoya el grupo vitaminas.,1
+VM128,alteracion_metabolismo_folato_b12_homocisteina,folate_ng_ml,primary_driver,low,0.95,vitaminas,1,alta,Driver principal: descenso de folate_ng_ml apoya el grupo vitaminas.,1
+VM129,alteracion_metabolismo_folato_b12_homocisteina,creatinine_mg_dl,contextual_support,high,0.15,contexto_metabolico,0,baja,Contexto: elevación de creatinine_mg_dl apoya el grupo contexto_metabolico.,1
+VM130,alteracion_metabolismo_folato_b12_homocisteina,egfr_ml_min_1_73m2,contextual_support,low,0.15,contexto_metabolico,0,baja,Contexto: descenso de egfr_ml_min_1_73m2 apoya el grupo contexto_metabolico.,1
+VM131,alteracion_metabolismo_folato_b12_homocisteina,albumin_g_dl,contextual_support,low,0.15,contexto_metabolico,0,baja,Contexto: descenso de albumin_g_dl apoya el grupo contexto_metabolico.,1
+VM132,alteracion_metabolismo_folato_b12_homocisteina,tsh_mIU_l,contextual_support,high,0.15,contexto_metabolico,0,baja,Contexto: elevación de tsh_mIU_l apoya el grupo contexto_metabolico.,1
+VM133,deficit_proteico_catabolismo,chol_total_mg_dl,contextual_support,low,0.17,nutricional,0,baja,Contexto: descenso de chol_total_mg_dl apoya el grupo nutricional.,1
+VM134,deficit_proteico_catabolismo,lymph_abs_x10_3_mm3,contextual_support,low,0.17,nutricional,0,baja,Contexto: descenso de lymph_abs_x10_3_mm3 apoya el grupo nutricional.,1
+VM135,deficit_proteico_catabolismo,hb_g_dl,contextual_support,low,0.17,nutricional,0,baja,Contexto: descenso de hb_g_dl apoya el grupo nutricional.,1
+VM136,deficit_proteico_catabolismo,creatinine_mg_dl,supporting_driver,low,0.37,catabolico_masa,0,baja,Driver de soporte: descenso de creatinine_mg_dl apoya el grupo catabolico_masa.,1
+VM137,deficit_proteico_catabolismo,urea_mg_dl,supporting_driver,low,0.32,catabolico_masa,0,baja,Driver de soporte: descenso de urea_mg_dl apoya el grupo catabolico_masa.,1
+VM138,deficit_proteico_catabolismo,urea_mg_dl,supporting_driver,high,0.32,catabolico_masa,0,baja,Driver de soporte: elevación de urea_mg_dl apoya el grupo catabolico_masa.,1
+VM139,deficit_proteico_catabolismo,bmi_kg_m2,supporting_driver,low,0.37,catabolico_masa,0,baja,Driver de soporte: descenso de bmi_kg_m2 apoya el grupo catabolico_masa.,1
+VM140,deficit_proteico_catabolismo,albumin_g_dl,primary_driver,low,0.86,nutricional,1,alta,Driver principal: descenso de albumin_g_dl apoya el grupo nutricional.,1
+VM141,carga_hepatica,insulin_uIU_ml,contextual_support,high,0.17,metabolico,0,baja,Contexto: elevación de insulin_uIU_ml apoya el grupo metabolico.,1
+VM142,carga_hepatica,triglycerides_mg_dl,contextual_support,high,0.17,metabolico,0,baja,Contexto: elevación de triglycerides_mg_dl apoya el grupo metabolico.,1
+VM143,carga_hepatica,ferritin_ng_ml,contextual_support,high,0.17,metabolico,0,baja,Contexto: elevación de ferritin_ng_ml apoya el grupo metabolico.,1
+VM144,carga_hepatica,alt_u_l,primary_driver,high,0.86,citolisis,1,alta,Driver principal: elevación de alt_u_l apoya el grupo citolisis.,1
+VM145,carga_hepatica,ast_u_l,supporting_driver,high,0.47,citolisis,0,media,Driver de soporte: elevación de ast_u_l apoya el grupo citolisis.,1
+VM146,carga_hepatica,ggt_u_l,supporting_driver,high,0.37,colestasis,0,baja,Driver de soporte: elevación de ggt_u_l apoya el grupo colestasis.,1
+VM147,carga_hepatica,bilirubin_total_mg_dl,contextual_support,high,0.17,colestasis,0,baja,Contexto: elevación de bilirubin_total_mg_dl apoya el grupo colestasis.,1
+VM148,carga_hepatica,albumin_g_dl,supporting_driver,low,0.48,sintesis,0,media,Driver de soporte: descenso de albumin_g_dl apoya el grupo sintesis.,1
+VM149,componente_hepatobiliar,alt_u_l,supporting_driver,high,0.37,citolisis,0,baja,Driver de soporte: elevación de alt_u_l apoya el grupo citolisis.,1
+VM150,componente_hepatobiliar,ast_u_l,contextual_support,high,0.17,citolisis,0,baja,Contexto: elevación de ast_u_l apoya el grupo citolisis.,1
+VM151,componente_hepatobiliar,ggt_u_l,primary_driver,high,0.86,colestasis,1,alta,Driver principal: elevación de ggt_u_l apoya el grupo colestasis.,1
+VM152,componente_hepatobiliar,alp_u_l,primary_driver,high,0.86,colestasis,1,alta,Driver principal: elevación de alp_u_l apoya el grupo colestasis.,1
+VM153,componente_hepatobiliar,bilirubin_total_mg_dl,primary_driver,high,0.86,colestasis,1,alta,Driver principal: elevación de bilirubin_total_mg_dl apoya el grupo colestasis.,1
+VM154,seguridad_renal,hb_g_dl,contextual_support,low,0.17,volumen,0,baja,Contexto: descenso de hb_g_dl apoya el grupo volumen.,1
+VM155,seguridad_renal,creatinine_mg_dl,primary_driver,high,0.86,renal,1,alta,Driver principal: elevación de creatinine_mg_dl apoya el grupo renal.,1
+VM156,seguridad_renal,egfr_ml_min_1_73m2,primary_driver,low,1.0,renal,1,alta,Driver principal: descenso de egfr_ml_min_1_73m2 apoya el grupo renal.,1
+VM157,seguridad_renal,uric_acid_mg_dl,contextual_support,high,0.17,urato,0,baja,Contexto: elevación de uric_acid_mg_dl apoya el grupo urato.,1
+VM158,seguridad_renal,urea_mg_dl,supporting_driver,high,0.37,renal,0,baja,Driver de soporte: elevación de urea_mg_dl apoya el grupo renal.,1
+VM159,seguridad_renal,uacr_mg_g,primary_driver,high,1.0,renal,1,alta,Driver principal: elevación de uacr_mg_g apoya el grupo renal.,1
+VM160,seguridad_renal,albumin_g_dl,contextual_support,low,0.17,volumen,0,baja,Contexto: descenso de albumin_g_dl apoya el grupo volumen.,1
+VM161,deshidratacion_hemoconcentracion,hb_g_dl,supporting_driver,high,0.37,volumen,0,baja,Driver de soporte: elevación de hb_g_dl apoya el grupo volumen.,1
+VM162,deshidratacion_hemoconcentracion,hct_pct,primary_driver,high,0.86,volumen,1,alta,Driver principal: elevación de hct_pct apoya el grupo volumen.,1
+VM163,deshidratacion_hemoconcentracion,rbc_x10_6_mm3,contextual_support,high,0.17,volumen,0,baja,Contexto: elevación de rbc_x10_6_mm3 apoya el grupo volumen.,1
+VM164,deshidratacion_hemoconcentracion,creatinine_mg_dl,supporting_driver,high,0.37,renal,0,baja,Driver de soporte: elevación de creatinine_mg_dl apoya el grupo renal.,1
+VM165,deshidratacion_hemoconcentracion,uric_acid_mg_dl,contextual_support,high,0.17,urato,0,baja,Contexto: elevación de uric_acid_mg_dl apoya el grupo urato.,1
+VM166,deshidratacion_hemoconcentracion,urea_mg_dl,primary_driver,high,0.86,renal,1,alta,Driver principal: elevación de urea_mg_dl apoya el grupo renal.,1
+VM167,deshidratacion_hemoconcentracion,albumin_g_dl,supporting_driver,high,0.37,volumen,0,baja,Driver de soporte: elevación de albumin_g_dl apoya el grupo volumen.,1
+VM168,retencion_hidrosalina,hb_g_dl,contextual_support,low,0.15,volumen,0,baja,Contexto: descenso de hb_g_dl apoya el grupo volumen.,1
+VM169,retencion_hidrosalina,hct_pct,supporting_driver,low,0.33,volumen,0,baja,Driver de soporte: descenso de hct_pct apoya el grupo volumen.,1
+VM170,retencion_hidrosalina,creatinine_mg_dl,contextual_support,high,0.15,renal,0,baja,Contexto: elevación de creatinine_mg_dl apoya el grupo renal.,1
+VM171,retencion_hidrosalina,egfr_ml_min_1_73m2,contextual_support,low,0.15,renal,0,baja,Contexto: descenso de egfr_ml_min_1_73m2 apoya el grupo renal.,1
+VM172,retencion_hidrosalina,bmi_kg_m2,contextual_support,high,0.15,metabolico,0,baja,Contexto: elevación de bmi_kg_m2 apoya el grupo metabolico.,1
+VM173,retencion_hidrosalina,uacr_mg_g,contextual_support,high,0.15,renal,0,baja,Contexto: elevación de uacr_mg_g apoya el grupo renal.,1
+VM174,retencion_hidrosalina,albumin_g_dl,supporting_driver,low,0.33,volumen,0,baja,Driver de soporte: descenso de albumin_g_dl apoya el grupo volumen.,1
+VM175,resistencia_leptinica_saciedad,insulin_uIU_ml,supporting_driver,high,0.33,glucometabolico,0,baja,Driver de soporte: elevación de insulin_uIU_ml apoya el grupo glucometabolico.,1
+VM176,resistencia_leptinica_saciedad,triglycerides_mg_dl,supporting_driver,high,0.33,tg_hdl,0,baja,Driver de soporte: elevación de triglycerides_mg_dl apoya el grupo tg_hdl.,1
+VM177,resistencia_leptinica_saciedad,hdl_mg_dl,supporting_driver,low,0.33,tg_hdl,0,baja,Driver de soporte: descenso de hdl_mg_dl apoya el grupo tg_hdl.,1
+VM178,resistencia_leptinica_saciedad,hscrp_mg_l,contextual_support,high,0.15,contexto_riesgo,0,baja,Contexto: elevación de hscrp_mg_l apoya el grupo contexto_riesgo.,1
+VM179,resistencia_leptinica_saciedad,bmi_kg_m2,supporting_driver,high,0.42,adiposidad,0,media,Driver de soporte: elevación de bmi_kg_m2 apoya el grupo adiposidad.,1
+VM180,resistencia_leptinica_saciedad,waist_cm,primary_driver,high,0.77,adiposidad,1,alta,Driver principal: elevación de waist_cm apoya el grupo adiposidad.,1
+VM181,disfuncion_tiroidea_periferica,triglycerides_mg_dl,contextual_support,high,0.17,repercusion_lipidica,0,baja,Contexto: elevación de triglycerides_mg_dl apoya el grupo repercusion_lipidica.,1
+VM182,disfuncion_tiroidea_periferica,ldl_mg_dl,supporting_driver,high,0.37,repercusion_lipidica,0,baja,Driver de soporte: elevación de ldl_mg_dl apoya el grupo repercusion_lipidica.,1
+VM183,disfuncion_tiroidea_periferica,chol_total_mg_dl,supporting_driver,high,0.37,repercusion_lipidica,0,baja,Driver de soporte: elevación de chol_total_mg_dl apoya el grupo repercusion_lipidica.,1
+VM184,disfuncion_tiroidea_periferica,bmi_kg_m2,contextual_support,low,0.15,fenotipo,0,baja,Contexto: descenso de bmi_kg_m2 apoya el grupo fenotipo.,1
+VM185,disfuncion_tiroidea_periferica,bmi_kg_m2,contextual_support,high,0.15,fenotipo,0,baja,Contexto: elevación de bmi_kg_m2 apoya el grupo fenotipo.,1
+VM186,disfuncion_tiroidea_periferica,tsh_mIU_l,primary_driver,low,0.95,eje_tiroideo,1,alta,Driver principal: descenso de tsh_mIU_l apoya el grupo eje_tiroideo.,1
+VM187,disfuncion_tiroidea_periferica,tsh_mIU_l,primary_driver,high,0.95,eje_tiroideo,1,alta,Driver principal: elevación de tsh_mIU_l apoya el grupo eje_tiroideo.,1
+VM188,disfuncion_tiroidea_periferica,ft4_ng_dl,primary_driver,low,0.95,eje_tiroideo,1,alta,Driver principal: descenso de ft4_ng_dl apoya el grupo eje_tiroideo.,1
+VM189,disfuncion_tiroidea_periferica,ft4_ng_dl,primary_driver,high,0.95,eje_tiroideo,1,alta,Driver principal: elevación de ft4_ng_dl apoya el grupo eje_tiroideo.,1
+VM190,estado_anabolico_bajo,hb_g_dl,contextual_support,low,0.17,nutricional,0,baja,Contexto: descenso de hb_g_dl apoya el grupo nutricional.,1
+VM191,estado_anabolico_bajo,creatinine_mg_dl,supporting_driver,low,0.37,catabolico_masa,0,baja,Driver de soporte: descenso de creatinine_mg_dl apoya el grupo catabolico_masa.,1
+VM192,estado_anabolico_bajo,urea_mg_dl,contextual_support,low,0.17,catabolico_masa,0,baja,Contexto: descenso de urea_mg_dl apoya el grupo catabolico_masa.,1
+VM193,estado_anabolico_bajo,bmi_kg_m2,supporting_driver,low,0.37,catabolico_masa,0,baja,Driver de soporte: descenso de bmi_kg_m2 apoya el grupo catabolico_masa.,1
+VM194,estado_anabolico_bajo,albumin_g_dl,supporting_driver,low,0.37,nutricional,0,baja,Driver de soporte: descenso de albumin_g_dl apoya el grupo nutricional.,1
+VM195,recambio_muscular_lesion,hscrp_mg_l,contextual_support,high,0.15,lesion_contexto,0,baja,Contexto: elevación de hscrp_mg_l apoya el grupo lesion_contexto.,0
+VM196,recambio_muscular_lesion,alt_u_l,contextual_support,high,0.15,lesion_contexto,0,baja,Contexto: elevación de alt_u_l apoya el grupo lesion_contexto.,0
+VM197,recambio_muscular_lesion,ast_u_l,supporting_driver,high,0.29,lesion_contexto,0,baja,Driver de soporte: elevación de ast_u_l apoya el grupo lesion_contexto.,0
+VM198,recambio_muscular_lesion,creatinine_mg_dl,contextual_support,low,0.15,catabolico_masa,0,baja,Contexto: descenso de creatinine_mg_dl apoya el grupo catabolico_masa.,0
+VM199,recambio_muscular_lesion,creatinine_mg_dl,contextual_support,high,0.15,catabolico_masa,0,baja,Contexto: elevación de creatinine_mg_dl apoya el grupo catabolico_masa.,0
+VM200,recambio_muscular_lesion,uric_acid_mg_dl,contextual_support,high,0.15,lesion_contexto,0,baja,Contexto: elevación de uric_acid_mg_dl apoya el grupo lesion_contexto.,0
+VM201,recambio_muscular_lesion,urea_mg_dl,contextual_support,high,0.15,catabolico_masa,0,baja,Contexto: elevación de urea_mg_dl apoya el grupo catabolico_masa.,0
